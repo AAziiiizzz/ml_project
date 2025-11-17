@@ -1,0 +1,14 @@
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+jupyter
+mlflow
+fastapi
+uvicorn
+joblib
+flake8
+black
+mypy
+watchdog

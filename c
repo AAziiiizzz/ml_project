@@ -1,0 +1,16 @@
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=AZIIIZcoding
+user.email=zizoubelhadjyahia@gmail.com
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+filter.lfs.clean=git-lfs clean -- %f
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/AZIIIZcoding/ml_project
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
