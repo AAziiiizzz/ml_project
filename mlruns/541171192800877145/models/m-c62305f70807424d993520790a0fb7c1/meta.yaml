@@ -1,0 +1,10 @@
+artifact_location: file:///home/aziz/belhajyahia-aziz-4DS8-ml_project/mlruns/541171192800877145/models/m-c62305f70807424d993520790a0fb7c1/artifacts
+creation_timestamp: 1765035884085
+experiment_id: '541171192800877145'
+last_updated_timestamp: 1765035887488
+model_id: m-c62305f70807424d993520790a0fb7c1
+model_type: null
+name: model
+source_run_id: 557ca7dbddc34a3b886f95e1ae95ab3a
+status: 2
+status_message: null

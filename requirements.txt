@@ -12,3 +12,8 @@ flake8
 black
 mypy
 watchdog
+isort
+bandit
+fastapi
+uvicorn
+mlflow

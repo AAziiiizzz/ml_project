@@ -1,0 +1,14 @@
+artifact_uri: file:///home/aziz/belhajyahia-aziz-4DS8-ml_project/mlruns/541171192800877145/a12b700eacb241df80039b6ad63b872b/artifacts
+end_time: 1765035827088
+entry_point_name: ''
+experiment_id: '541171192800877145'
+lifecycle_stage: active
+run_id: a12b700eacb241df80039b6ad63b872b
+run_name: training_run
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765035824408
+status: 3
+tags: []
+user_id: aziz

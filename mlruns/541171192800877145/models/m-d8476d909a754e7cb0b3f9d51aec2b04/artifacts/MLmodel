@@ -1,0 +1,22 @@
+artifact_path: file:///home/aziz/belhajyahia-aziz-4DS8-ml_project/mlruns/541171192800877145/models/m-d8476d909a754e7cb0b3f9d51aec2b04/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.6.0
+model_id: m-d8476d909a754e7cb0b3f9d51aec2b04
+model_size_bytes: 43152
+model_uuid: m-d8476d909a754e7cb0b3f9d51aec2b04
+prompts: null
+run_id: 580da48b7d51455e99f54210a6642417
+utc_time_created: '2025-12-06 15:43:07.043224'
