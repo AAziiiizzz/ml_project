@@ -5,6 +5,8 @@ on:
     branches: [ master ]  # ou main si ta branche principale s'appelle main
   pull_request:
     branches: [ master ]
+env:
+  DB_PATH: ":memory:"
 
 jobs:
   build-and-run:

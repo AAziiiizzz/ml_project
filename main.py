@@ -4,6 +4,8 @@ warnings.filterwarnings('ignore')
 import mlflow
 import mlflow.sklearn
 from sklearn.metrics import precision_score, recall_score, f1_score, roc_auc_score
+import os 
+import sqlite3
 
 from model_pipeline import (
     prepare_data,
@@ -14,11 +16,35 @@ from model_pipeline import (
     load_model
 )
 
+DB_PATH = os.getenv("DB_PATH", "mlflow.db")  # mlflow.db pour local, variable pour CI
+
+def init_db(path):
+    """Crée la DB et les tables si elles n'existent pas."""
+    conn = sqlite3.connect(path)
+    cursor = conn.cursor()
+
+    # Exemple de table pour MLflow (ajuster si besoin)
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS experiments (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL,
+            created_at TEXT
+        )
+    """)
+
+    conn.commit()
+    conn.close()
+
+# Initialisation de la DB avant tout
+init_db(DB_PATH)
+
+
 def main():
     # ================================
     # 🔥 Configuration MLflow
     # ================================
-    mlflow.set_tracking_uri("sqlite:///mlflow.db")
+    #mlflow.set_tracking_uri("sqlite:///mlflow.db")
+    mlflow.set_tracking_uri(f"sqlite:///{DB_PATH}")
     mlflow.set_experiment("Loan_Approval_Experiment")  # ✅ Même nom que Flask
 
     with mlflow.start_run(run_name="CLI_Training_Run"):
